@@ -4,9 +4,14 @@ phases:
   install:
     runtime-versions:
         python: 3.7
+    commands:
+      - pipenv install
+  pre_build:
+    commands:
+      - export VIRTUAL_ENV=$(pipenv --venv)
   build:
     commands:
-      - echo Build started!
+      - pipenv run zappa update
 artifacts:
   files:
     -  README.md
