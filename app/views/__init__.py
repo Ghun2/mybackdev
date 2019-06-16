@@ -2,7 +2,7 @@ from flask import Blueprint, Flask
 from flask_restful import Api
 
 def route(flask_app: Flask):
-    from app.views.user.account import auth, check_duplicate, refresh, signup, verify
+    from app.views.user.account import auth, check_duplicate, refresh, signup
 
     handle_exception_func = flask_app.handle_exception
     handle_user_exception_func = flask_app.handle_user_exception
