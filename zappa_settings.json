@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "app.app",
+        "app_function": "run.app",
         "aws_region": "ap-northeast-2",
         "project_name": "flask-api",
         "runtime": "python3.7",

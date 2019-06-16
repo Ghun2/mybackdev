@@ -9,6 +9,15 @@ pylint = "*"
 [packages]
 flask = "*"
 zappa = "*"
+schematics = "*"
+sqlalchemy = "*"
+mysqlclient = "*"
+arrow = "*"
+flask-jwt-extended = "*"
+flask-restful = "*"
+termcolor = "*"
+werkzeug = "*"
+pydantic = "*"
 
 [requires]
 python_version = "3.7"
