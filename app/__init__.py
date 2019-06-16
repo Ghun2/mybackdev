@@ -6,10 +6,9 @@ from app.misc.log import log
 
 
 def register_extensions(flask_app: Flask):
-    # from app import extensions
+    from app.extensions import main_db
 
-    # extensions.cors.init_app(flask_app)
-    pass
+    main_db.init_app(flask_app)
     
 
 
